@@ -53,7 +53,11 @@ end
 def all_supplies_in_holidays(holiday_hash)
  
   
-  holiday_hash.each do |seasons, festivals|
+  holiday_hash.each do |season, holiday|
+    if  season == :winter
+      if holiday == :christmas
+        
+    end  
     festivals.each do |festivals, items|
       season = seasons.to_s.capitalize!
       festival_cap = festivals.to_s.split
