@@ -32,11 +32,16 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
 end
 
 
-def add_supply_to_memorial_day(holiday_hash, supply)
+# def add_supply_to_memorial_day(holiday_hash, supply)
   
-  holiday_hash[:spring][:memorial_day][1].push("supply")
+#   holiday_hash[:spring][:memorial_day][1].push("supply")
   
  
+# end
+
+def add_supply_to_memorial_day(holiday_hash, supply)
+ 
+  holiday_hash[:spring][:memorial_day].push(supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
