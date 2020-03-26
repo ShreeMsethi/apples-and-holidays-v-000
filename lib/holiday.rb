@@ -25,26 +25,10 @@ def second_supply_for_fourth_of_july(holiday_hash)
   end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-  # holiday_hash is identical to the one above
-  # add the second argument, which is a supply, to BOTH the
-  # Christmas AND the New Year's arrays
-  
   holiday_hash[:winter][:christmas][2] = "Balloons"
   
   holiday_hash[:winter][:new_years][1] = "Balloons"
   
-  # holiday_hash.each do |season, occasion|
-  #   if season == :winter
-  #     occasion.each do |festival, item|
-  #       if festival == :christmas
-  #       puts item 
-  #       end
-  #       if festival == :new_years
-  #       puts item
-  #       end
-  #     end
-  #   end
-  # end
 end
 
 
