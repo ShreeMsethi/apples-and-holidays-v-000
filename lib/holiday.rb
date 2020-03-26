@@ -51,24 +51,14 @@ holiday_hash[:winter].values.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
- 
   
-  holiday_hash.each do |season, holiday|
-    if  season == :winter
-      if holiday == :christmas
-        
-    end  
-    festivals.each do |festivals, items|
-      season = seasons.to_s.capitalize!
-      festival_cap = festivals.to_s.split
-      festival_cap.map do |words| 
-        words.capitalize!
-      end
-      puts "#{season}:
-     #{festival_cap}: #{items}"
-    end
-  end
-
+    holiday_hash.each do | season, holiday|
+     puts "#{season.capitalize}:"
+     holiday.each do |holiday, item|
+       puts "  #{holiday.to_s.split("_").map {|i| i.capitalize}.join(" ")}: #{item.join(", ")}"
+     end
+  end 
+  
 end
 
 def all_holidays_with_bbq(holiday_hash)
